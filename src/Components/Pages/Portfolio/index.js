@@ -68,7 +68,7 @@ const Portfolio = () => {
                                     <FaGithub />
                                 </li>
                             </a>
-                            <a href="https://blooming-refuge-93954.herokuapp.com/" target="blank">
+                            <a href="https://tech-blog-forum.herokuapp.com/" target="blank">
                                 <li>
                                     <FaRocket />
                                 </li>
