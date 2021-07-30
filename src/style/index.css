@@ -5,7 +5,7 @@ main {
   }
   
   :root {
-    --black: #282c34;
+    --black: #1d1b1b;
     --red: #e06c75;
     --green: #98c379;
     --yellow: #e5c07b;
@@ -13,6 +13,9 @@ main {
     --purple: #c678dd;
     --teal: #56b6c2;
     --grey: #abb2bf;
+    --white: #FFFFFF;
+    --red: #FF0000;
+
   }
   
   * {
@@ -32,8 +35,8 @@ main {
     line-height: 1.5;
     font-size: 18px;
     letter-spacing: 0.1em;
-    background: var(--black);
-    color: var(--grey);
+    background: var(--blue);
+    color: var(--red);
     font-family: 'Mukta', sans-serif;  }
   
   h1,
@@ -47,11 +50,12 @@ main {
   h1 {
     font-size: 2.25rem;
     padding-top: 0px;
-    color: var(--yellow);
+    color: var(--black);
   }
   
   h2 {
     font-size: 2rem;
+    color: var(--black);
   }
   
   h3 {
@@ -68,6 +72,7 @@ main {
   
   h6 {
     font-size: 1rem;
+    color: var(--black);
   }
   
   header {
@@ -95,11 +100,12 @@ main {
   
   li {
     list-style: none;
+    color: var(--black);
   }
   
   a {
     text-decoration: none;
-    color: var(--grey);
+    color: var(--white);
   }
   
   a:hover {
@@ -184,7 +190,7 @@ main {
     margin: 20px auto;
     background-color: var(--blue);
     border: none;
-    color: #ffffff;
+    color: var(--black);
     padding: 18px 32px;
     text-align: center;
     text-decoration: none;

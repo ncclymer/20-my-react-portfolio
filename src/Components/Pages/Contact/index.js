@@ -40,7 +40,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-  emailjs.sendForm('service_c1s53nk', 'template_qt0e47b', e.target, 'user_idrS1RLZVGAjL0W9AeyBm')
+  emailjs.sendForm('service_g4erpwh', 'template_aguj0rr', e.target, 'user_nvwfFUIiN7fqhJUBnoL2A')
   .then((result) => {
       console.log(result.text);
   }, (error) => {
