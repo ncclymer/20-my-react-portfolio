@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import { FaGithub, FaRocket } from "react-icons/fa";
 
 const Portfolio = () => {
-    const tbc = require("src/assets/img/tbclp.png").default;
+    const tbc = require("../../../assets/img/tbclp.png").default;
     const calc = require("../../../assets/img/calc.png").default;
     const techBlog = require("../../../assets/img/techblog.png").default;
     const budgetTracker = require("../../../assets/img/budget-tracker.png").default;
@@ -26,7 +26,7 @@ const Portfolio = () => {
                                     <FaGithub />
                                 </li>
                             </a>
-                            <a href="#" target="blank">
+                            <a href="https://thebaileycafe.herokuapp.com/" target="blank">
                                 <li>
                                     <FaRocket />
                                 </li>

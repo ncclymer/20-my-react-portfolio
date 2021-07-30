@@ -2,12 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { FaDownload } from "react-icons/fa";
+import  MyResume from "../../resume/resume";
 
 const Home = () => {
-  const resume = require("../../../assets/resume/resume.pdf").default;
-
-  console.log(resume);
-
   return (
     <div>
       <div className="skills">
@@ -47,9 +44,8 @@ const Home = () => {
       </div>
       <div className="download">
         <h2>
-          <a href={resume} download>
-            <FaDownload />
-          </a>
+          <MyResume />
+          <FaDownload />
         </h2>
       </div>
     </div>
