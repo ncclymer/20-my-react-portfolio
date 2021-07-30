@@ -100,7 +100,7 @@ main {
   
   li {
     list-style: none;
-    color: var(--black);
+    color: var(--white);
   }
   
   a {
