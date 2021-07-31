@@ -40,3 +40,5 @@
 
   You can also reach me directly at: nick_clymer2018@yahoo.com
   
+  Screen shot : ![Portfolio Image](reactscreenshot.png)
+  
