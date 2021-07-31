@@ -18,7 +18,7 @@ const Portfolio = () => {
                     <Card>
                         <Card.Img variant="left" src={tbc} />
                         <Card.Body className="port-body">
-                            Full stack MERN application retail web app. It has a react front end, db services provided my mongoatlas, and hosted on Heroku.
+                            Full stack MERN retail web app. It has a react front end, db services provided my mongoatlas, and hosted on Heroku.
                         </Card.Body>
                         <ul>
                             <a href="https://github.com/ncclymer/Baileys-Cafe" target="blank">

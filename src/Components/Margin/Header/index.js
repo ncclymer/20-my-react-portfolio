@@ -5,6 +5,7 @@ import Portfolio from "../../Pages/Portfolio";
 import Contact from "../../Pages/Contact";
 import Resume from "../../Pages/Resume";
 import Footer from "../../Margin/Footer";
+import Image from "../../../assets/img/headshot.jpg";
 
 const Header = () => {
   const [currentPage, handlePageChange] = useState("About/");
@@ -27,6 +28,7 @@ const Header = () => {
     <div className="main-container">
       <div>
         <header>
+          <img className='hs' src={Image} alt="profile" />
           <h2>Nick Clymer</h2>
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </header>
