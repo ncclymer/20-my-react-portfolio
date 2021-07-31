@@ -14,23 +14,56 @@ const Contact = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const { name, email, message } = formState;
-
   const handleChange = (e) => {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      console.log(isValid);
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
+    let targetName = e.target
+    switch (targetName.name) {
+      case "email":
+        if (e.target.value.length === 0) {
+          setErrorMessage(`Email is required.`);
+        } else if (!validateEmail(targetName.value)) {
+          setErrorMessage("Your email is invalid.");
+        }
+        break;
+      case "name":
+        if (e.target.value.length === 0) {
+          setErrorMessage(`Name is required.`);
+        } else {
+          setErrorMessage('')
+        }
+        break;
+      case "message":
+        if (e.target.value.length === 0) {
+          setErrorMessage(`Message is required.`);
+        } else {
+          setErrorMessage('')
+        }
+        break;
+        default: 
+        console.log("not working")
     }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
-  };
+        if (!errorMessage) {
+          setFormState({ ...formState, [e.target.name]: e.target.value });
+        }
+      };
+
+  // const handleChange = (e) => {
+  //   if (e.target.name === "email") {
+  //     const isValid = validateEmail(e.target.value);
+  //     console.log(isValid);
+  //     if (e.target.value.length === 0) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //     }
+  //      else if (!isValid) {
+  //       setErrorMessage("Your email is invalid.");
+  //     }  else {
+  //       setErrorMessage("");
+  //     } 
+  //   }
+  //   else {setErrorMessage(`${e.target.name} is required.`);}
+  //   if (!errorMessage) {
+  //     setFormState({ ...formState, [e.target.name]: e.target.value });
+  //   }
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +92,7 @@ const Contact = () => {
             name="name"
             placeholder="Full Name"
             defaultValue={name}
-            onBlur={handleChange}
+            onChange={handleChange}
           />
         </div>
         <div>
